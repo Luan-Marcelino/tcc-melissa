@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 :root {
     --cor-primaria: #B95E82; 
     --cor-secundaria: #FFECC0;
@@ -17,6 +22,8 @@
     justify-content: center;
     align-items: center;
     background-color: var(--cor-primaria);
+    padding: 0px 0px 40px 0;
+    
 }
 
 .menu-opcao {
@@ -24,6 +31,7 @@
     padding: 10px;
     font-size: 2rem;
     font-family: "Dosis", sans-serif;
+    
 }
 
 .menu-opcao:hover {
@@ -33,21 +41,11 @@
 
 
 .capa {
-    display: flex;
     height: 100vh;
+    display: flex;
     justify-content: center;
-    align-items: center;
     background-color: var(--cor-primaria);
-
-}
-
-.cookie-capa {
-    position: absolute;
-    transform: scale(1.5);
-}
-
-.cookie {
-    position: relative;
+    
 }
 
 .titulo {
@@ -55,18 +53,18 @@
     display: flex;
     justify-content: center;
     top: 200px;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: "Dosis";
     color: var(--cor-secundaria);
+
 }
 
 .cookie-header-esquerda {
-    transform: translateX(185px);
-    
+    transform: translateX(180px) scale(1.5);
 }
 
 .cookie-header-direita {
-    transform: translateX(-180px);
+    transform: translateX(-185px) scale(1.5);
 }
 
 .produtos {
@@ -75,4 +73,37 @@
 
 .sobre-mim {
     height: 100vh;
+}
+
+
+@media screen and (max-width: 480px) {
+    .menu {
+        gap: 15px;
+    }
+
+    .menu-opcao {
+        font-size: 1.5rem;
+    }
+
+    .capa {
+        width: 100%;
+        align-items: center;
+    }
+
+    .cookie {
+        width: 200px;
+    }
+
+    .cookie-header-esquerda {
+        transform: translateX(104px) scale(1.7);
+    }
+    .cookie-header-direita {
+        transform: translateX(-100px) scale(1.7);
+}
+
+
+    .titulo {
+        font-size: 3rem;
+        top:130px;
+    }
 }
