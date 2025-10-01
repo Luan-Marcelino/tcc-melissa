@@ -86,19 +86,19 @@ html, body {
     }
 
     .capa {
-        width: 100%;
+    
         align-items: center;
     }
 
     .cookie {
-        width: 200px;
+        width: 48%;
     }
 
     .cookie-header-esquerda {
-        transform: translateX(104px) scale(1.7);
+        transform: translateX(102px) scale(1.7);
     }
     .cookie-header-direita {
-        transform: translateX(-100px) scale(1.7);
+        transform: translateX(-85px) scale(1.7);
 }
 
 

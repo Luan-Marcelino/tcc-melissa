@@ -14,8 +14,8 @@ window.addEventListener('scroll', () => {
         cookie_direita.style.transform = `translateX(${-185 + tamanhoY}px) scale(1.5)`;
         
     }else if(tamanhoX <= 480 && tamanhoY <= 150) {//para mobile
-        cookie_esquerda.style.transform = `translateX(${104 - tamanhoY}px) scale(1.7)`;
-        cookie_direita.style.transform = `translateX(${-100 + tamanhoY}px) scale(1.7)`;
+        cookie_esquerda.style.transform = `translateX(${102 - tamanhoY}px) scale(1.7)`;
+        cookie_direita.style.transform = `translateX(${-85 + tamanhoY}px) scale(1.7)`;
     }
     //console.log(tamanhoY);
     
