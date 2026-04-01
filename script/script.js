@@ -5,20 +5,18 @@ const cookie_direita = document.querySelector('.cookie-header-direita');
 
 
 window.addEventListener('scroll', () => {
+    const menu_fixo = document.querySelector('#home ul');
+    const menu_opcoes = document.querySelectorAll('.menu-opcao');
     const tamanhoY = window.scrollY;
-    const tamanhoX = window.innerWidth;
-    console.log(tamanhoX);
+    console.log(tamanhoY);
     
-    
-    if(tamanhoX > 480 && tamanhoY <= 250) {
-        cookie_esquerda.style.transform = `translateX(${180 -tamanhoY}px) scale(1.5)`;
-        cookie_direita.style.transform = `translateX(${-185 + tamanhoY}px) scale(1.5)`;
-        
-    }else if(tamanhoX <= 480 && tamanhoY <= 150) {//para mobile
-        cookie_esquerda.style.transform = `translateX(${110 - tamanhoY}px) scale(1.7)`;
-        cookie_direita.style.transform = `translateX(${-85 + tamanhoY}px) scale(1.7)`;
+    if(tamanhoY > 500) {
+        menu_fixo.classList.add('pequeno');
+        menu_opcoes.forEach(opcoes => opcoes.classList.add('pequeno-opcao'));
+    }else {
+        menu_fixo.classList.remove('pequeno');
+        menu_opcoes.forEach(opcoes => opcoes.classList.remove('pequeno-opcao'));
     }
-    //console.log(tamanhoY);
     
 });
 
