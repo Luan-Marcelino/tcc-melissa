@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
     const tamanhoY = window.scrollY;
     console.log(tamanhoY);
     
-    if(tamanhoY > 500) {
+    if(tamanhoY > 400) {
         menu_fixo.classList.add('pequeno');
         menu_opcoes.forEach(opcoes => opcoes.classList.add('pequeno-opcao'));
     }else {
