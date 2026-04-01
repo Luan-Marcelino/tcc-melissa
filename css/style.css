@@ -50,7 +50,7 @@ html, body {
 }
 
 .cookie-capa {
-    background-image: url("/imagens/fundo-biscoito.avif");
+    background-image: url("imagens/fundo-biscoito.avif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
