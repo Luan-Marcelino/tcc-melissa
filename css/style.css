@@ -129,7 +129,9 @@ html, body {
     }
     .cookie-capa {
         background-color: var(--cor-quarta);
-        background-image: none;
+        background: linear-gradient(#b76532, #FFC29B);
+        
+        
     }
 
     .menu-opcao {
@@ -142,7 +144,9 @@ html, body {
     }
 
     #capa h1 {
-        font-size: 3em;
+        
+        font-size: 3.2em;
+        
     }
 
     .cookie {
