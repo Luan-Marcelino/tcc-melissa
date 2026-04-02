@@ -1,6 +1,6 @@
 # 🍪 CookieHolic
 
-A Landing Page é um projeto para uma loja de cookies: [CookeHolic](url:'https://tcc-melissa.vercel.app/#').
+A Landing Page é um projeto para uma loja de cookies: [CookeHolic](https://tcc-melissa.vercel.app/#).
 
 Criei o projeto para um TCC do curso de Administração da ETEC Lauro Gomes. A landing page tem 4 páginas, sendo:
 - Início
