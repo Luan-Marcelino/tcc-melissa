@@ -301,6 +301,19 @@ h1 {
         width: 48%;
     }
 
+    .cookie1 {
+        transform: scale(1) translateY(5px);
+    }
+
+    .cookie2 {
+        transform: scale(1) translateY(15px);
+    }
+
+    .cookie3 {
+        
+        transform: scale(0.9) translateY(-5px)
+    }
+
     .titulo {
         font-size: 3rem;
         top:130px;
@@ -327,7 +340,7 @@ h1 {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        gap: 60px;
+        gap: 80px;
     }
 
     .card {
