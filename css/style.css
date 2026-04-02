@@ -105,7 +105,7 @@ html, body {
     color: var(--cor-primaria);
     font-size: 5em;
     font-family: 'Dosis';
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 #produtos {
@@ -118,6 +118,9 @@ html, body {
     background-color: var(--cor-terceira);
     height: 100vh;
 }
+h1 {
+    color: #240f08;
+}
 
 #produtos h1 {
     font-size: 4em;
@@ -125,7 +128,7 @@ html, body {
 }
 
 .spam {
-    color: var(--cor-secundaria);
+    color: #FFC29B;
 }
 
 .card-produto {
@@ -140,13 +143,20 @@ html, body {
     border-radius: 20px;
     border: 2px solid var(--cor-primaria);
     filter: drop-shadow(0 0 5px #ff00fb51);
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-color: var(--cor-quarta);
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    transition: ease-in-out 0.09s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.09s;
+    filter: drop-shadow(0, 0, 20px #ff00fb8f);
 }
 
 .card span {
@@ -158,7 +168,7 @@ html, body {
     margin-top: -5px;
     font-weight: 600;
     color: #240f08;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .img-card {
@@ -169,11 +179,22 @@ html, body {
     
 }
 
-.img-card img {
-    width: 200px;
-    position: absolute;
-    top: -40px;
+.cookie1, .cookie2, .cookie3 {
+    
     filter: drop-shadow(0px -5px 20px rgba(255, 177, 69, 0.766));
+}
+
+.cookie1 {
+    transform: scale(1.5) translateY(-20px);
+}
+
+.cookie2 {
+    transform: scale(1.8) translateY(-20px)
+}
+
+.cookie3 {
+    
+    transform: scale(1.3) translateY(-30px)
 }
 
 .preco {
@@ -184,13 +205,47 @@ html, body {
 }
 
 #sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: var(--cor-quarta);
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre-nos h1 {
+    font-size: 4em;
+    text-align: center;
+    
+}
+
+.infos {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 92, 190, 0.5);
 }
 
 #contato {
     height: 100vh;
-    background-color: var(--cor-primaria);
+    
+    background-color: var(--cor-terceira);
+    padding: 20px;
+}
+
+.infos-contato {
+    width: 100%;
+    
+}
+
+.infos-contato i {
+    display: flex;
+    font-size: 12px;
+}
+
+.spam {
+    text-shadow: 0 0 2px rgb(135, 0, 81);
 }
 
 @media screen and (max-width: 480px) {
@@ -265,9 +320,7 @@ html, body {
         text-align: center;
     }
 
-    .spam {
-        color: var(--cor-secundaria);
-    }
+
 
     .card-produto {
         display: flex;
