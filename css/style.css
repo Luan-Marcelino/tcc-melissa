@@ -9,7 +9,7 @@
 html, body {
     width: 100%;
     scroll-behavior: smooth;
-    
+    font-family: "Funnel Sans", sans-serif;
 }
 
 :root {
@@ -109,8 +109,78 @@ html, body {
 }
 
 #produtos {
-    height: 100vh;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
     background-color: var(--cor-terceira);
+    height: 100vh;
+}
+
+#produtos h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.spam {
+    color: var(--cor-secundaria);
+}
+
+.card-produto {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.card {
+    border-radius: 20px;
+    border: 2px solid var(--cor-primaria);
+    filter: drop-shadow(0 0 5px #ff00fb51);
+    width: 250px;
+    height: 250px;
+    background-color: var(--cor-quarta);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.card span {
+    font-size: 1em;
+    color: #83351e;
+}
+
+.card p {
+    margin-top: -5px;
+    font-weight: 600;
+    color: #240f08;
+    font-size: 2em;
+}
+
+.img-card {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    position: relative;
+    
+}
+
+.img-card img {
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    filter: drop-shadow(0px -5px 20px rgba(255, 177, 69, 0.766));
+}
+
+.preco {
+    font-size: 2em;
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    text-align: center;
 }
 
 #sobre-nos {
@@ -124,9 +194,7 @@ html, body {
 }
 
 @media screen and (max-width: 480px) {
-    .menu {
-        
-    }
+    
     .cookie-capa {
         background-color: var(--cor-quarta);
         background: linear-gradient(#FFC29B,#c47c50);
@@ -134,8 +202,33 @@ html, body {
         
     }
 
+    .menu{
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-primaria);
+        list-style: none;
+        padding: 20px;
+    
+    }
+
+    .pequeno{
+        padding: 5px;
+        gap: 30px;
+        transition: ease-in 0.2s;
+    }
+
     .menu-opcao {
+        text-decoration: none;
         font-size: 1.5rem;
+        font-family: "Dosis", sans-serif;
+        color: var(--cor-secundaria);
+        transition: ease-in 0.2s;    
+    }
+
+    .pequeno-opcao{
+        font-size: 1em;
+        transition: ease-in 0.2s;
     }
 
     #capa {
@@ -157,4 +250,79 @@ html, body {
         font-size: 3rem;
         top:130px;
     }
+
+    #produtos {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        height: 100%;
+    }
+
+    #produtos h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .spam {
+        color: var(--cor-secundaria);
+    }
+
+    .card-produto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .card {
+        border-radius: 20px;
+        border: 2px solid var(--cor-primaria);
+        filter: drop-shadow(0 0 5px #ff00fb51);
+        width: 200px;
+        height: 200px;
+        background-color: var(--cor-quarta);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card span {
+        font-size: 1em;
+        color: #83351e;
+    }
+
+    .card p {
+        margin-top: -5px;
+        font-weight: 600;
+        color: #240f08;
+        font-size: 2em;
+    }
+
+    .img-card {
+        display: flex;
+        justify-content: center;
+        height: 50%;
+        position: relative;
+        
+    }
+
+    .img-card img {
+        width: 150px;
+        position: absolute;
+        bottom: 0px;
+        filter: drop-shadow(0px -5px 20px rgba(255, 177, 69, 0.766));
+    }
+
+    .preco {
+        font-size: 2em;
+        font-family: "Teko", sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
 }
