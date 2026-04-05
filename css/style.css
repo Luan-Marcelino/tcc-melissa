@@ -221,10 +221,49 @@ h1 {
     
 }
 
-.infos {
-    width: 80%;
+.carrossel {
+    max-width: 40%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    background-color: red;
+}
+
+.img-slides {
+    display: flex;
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.img-slides img { 
+    width: 100%;
+    flex-shrink: 0;
+    
+    transition: transform 0.5s ease;
+}
+
+.container-infos {
+    width: 90%;
     height: 80%;
     background-color: rgba(255, 92, 190, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 50%;
+    padding: 15px;
+    text-align: justify;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.info h2 {
+    font-size: 2em;
 }
 
 #contato {
@@ -272,7 +311,7 @@ h1 {
     color: black;
 }
 
-.fa-phone, .fa-whatsapp {
+.fa-instagram, .fa-whatsapp {
     display: flex;
     font-size: 2.5em;
     justify-content: center;
@@ -442,7 +481,7 @@ h1 {
         color: black;
     }
 
-    .fa-phone, .fa-whatsapp {
+    .fa-instagram, .fa-whatsapp {
         display: flex;
         font-size: 2em;
         justify-content: center;
@@ -450,4 +489,22 @@ h1 {
         
     }
 
+    #sobre-nos {
+        height: 100%;
+    }
+    .container-infos {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .carrossel {
+        max-width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
 }
