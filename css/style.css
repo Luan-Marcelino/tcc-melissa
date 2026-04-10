@@ -24,6 +24,14 @@ html, body {
     z-index: 9999;
     width: 100%;
     top: 0;
+    background-color: red;
+}
+
+.img-logo {
+    width: 110px;
+    position: fixed;
+    transition: ease-in 0.2s;
+    
     
 }
 
@@ -34,8 +42,14 @@ html, body {
     align-items: center;
     background-color: var(--cor-primaria);
     list-style: none;
+    box-shadow: 0px 0px 15px black;
     padding: 15px;
     
+}
+
+.pequeno-logo {
+    width: 50px;
+    transition: ease-in 0.2s;
 }
 
 .pequeno{
@@ -86,8 +100,10 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--cor-primaria);
 }
+
 
 .cookie-capa {
     background-image: url("/imagens/fundo-biscoito.avif");
@@ -98,6 +114,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.cookie-capa img {
+    width: 100%;
+    filter: drop-shadow(0 0px 20px rgb(255, 171, 52));
+    margin-top: 100px;
+    
 }
 
 
@@ -118,6 +142,7 @@ html, body {
     background-color: var(--cor-terceira);
     height: 100vh;
 }
+
 h1 {
     color: #240f08;
 }
@@ -342,6 +367,15 @@ h1 {
     
     }
 
+    .img-logo {
+        display: none;
+    }
+
+    .cookie-capa img {
+        width: 800px;
+    
+    }
+
     .pequeno{
         padding: 5px;
         gap: 30px;
@@ -362,7 +396,7 @@ h1 {
     }
 
     #capa {
-    
+        
         align-items: center;
     }
 
