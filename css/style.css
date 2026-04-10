@@ -26,7 +26,7 @@ html, body {
     z-index: 9999;
     width: 100%;
     top: 0;
-    background-color: red;
+    
 }
 
 .img-logo {
@@ -168,7 +168,7 @@ h1 {
 .card {
     border-radius: 20px;
     border: 2px solid var(--cor-1);
-    filter: drop-shadow(0 0 5px var(--cor-1));
+    filter: drop-shadow(0 0 5px var(--cor-6));
     width: 300px;
     height: 300px;
     background-color: var(--cor-3);
@@ -182,7 +182,7 @@ h1 {
 .card:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.09s;
-    filter: drop-shadow(0 0 20px var(--cor-1));
+    filter: drop-shadow(0 0 20px var(--cor-2));
 }
 
 .card span {
@@ -360,7 +360,6 @@ h1 {
         gap: 15px;
         justify-content: center;
         align-items: center;
-        background-color: var(--cor-primaria);
         list-style: none;
         padding: 20px;
     
@@ -372,7 +371,7 @@ h1 {
 
     .cookie-capa img {
         width: 800px;
-    
+        filter: drop-shadow(0 0px 10px var(--cor-1));
     }
 
     .pequeno{
@@ -385,7 +384,7 @@ h1 {
         text-decoration: none;
         font-size: 1.5rem;
         font-family: "Dosis", sans-serif;
-        color: var(--cor-secundaria);
+        color: var(--cor-1);
         transition: ease-in 0.2s;    
     }
 
@@ -453,15 +452,14 @@ h1 {
 
     .card {
         border-radius: 20px;
-        border: 2px solid var(--cor-primaria);
-        filter: drop-shadow(0 0 5px #ff00fb51);
         width: 200px;
         height: 200px;
-        background-color: var(--cor-quarta);
+        background-color: var(--cor-3);
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         text-align: center;
+        
     }
 
     .card span {
@@ -472,8 +470,8 @@ h1 {
     .card p {
         margin-top: -5px;
         font-weight: 600;
-        color: #240f08;
         font-size: 2em;
+        
     }
 
     .img-card {
@@ -488,7 +486,7 @@ h1 {
         width: 150px;
         position: absolute;
         bottom: 0px;
-        filter: drop-shadow(0px -5px 20px rgba(255, 177, 69, 0.766));
+        filter: drop-shadow(0px -5px 20px var(--cor-1));
     }
 
     .preco {
