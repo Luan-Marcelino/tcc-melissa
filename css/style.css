@@ -107,9 +107,7 @@ html, body {
 
 
 .cookie-capa {
-    background-image: url("/imagens/fundo-biscoito.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--cor-1);
     width: 100%;
     height: 95%;
     display: flex;
@@ -120,7 +118,7 @@ html, body {
 
 .cookie-capa img {
     width: 100%;
-    filter: drop-shadow(0 0px 20px rgb(255, 171, 52));
+    filter: drop-shadow(0 0px 20px var(--cor-3));
     margin-top: 100px;
     
 }
@@ -182,7 +180,6 @@ h1 {
 .card:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.09s;
-    filter: drop-shadow(0 0 20px var(--cor-2));
 }
 
 .card span {
@@ -351,9 +348,8 @@ h1 {
 @media screen and (max-width: 768px) {
     
     .cookie-capa {
-        background-color: var(--cor-quarta);
-        background: linear-gradient(#FFC29B,#c47c50);
-    
+        background-color: var(--cor-1);
+            
     }
 
     .menu{
@@ -371,7 +367,7 @@ h1 {
 
     .cookie-capa img {
         width: 800px;
-        filter: drop-shadow(0 0px 10px var(--cor-1));
+        filter: drop-shadow(0 0px 10px var(--cor-3));
     }
 
     .pequeno{
