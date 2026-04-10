@@ -29,14 +29,6 @@ html, body {
     
 }
 
-.img-logo {
-    width: 110px;
-    position: fixed;
-    transition: ease-in 0.2s;
-    
-    
-}
-
 .menu{
     display: flex;
     gap: 40px;
@@ -117,10 +109,9 @@ html, body {
 }
 
 .cookie-capa img {
-    width: 100%;
+    width: 40%;
     filter: drop-shadow(0 0px 20px var(--cor-3));
-    margin-top: 100px;
-    
+        
 }
 
 
@@ -347,6 +338,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     
+
     .cookie-capa {
         background-color: var(--cor-1);
             
@@ -361,12 +353,9 @@ h1 {
     
     }
 
-    .img-logo {
-        display: none;
-    }
-
     .cookie-capa img {
-        width: 800px;
+        width: 80%;
+
         filter: drop-shadow(0 0px 10px var(--cor-3));
     }
 
