@@ -16,6 +16,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
+const tamanhoX = window.innerWidth;
+console.log(tamanhoX);
+
+menu_fixo.innerHTML = tamanhoX
 
 //Carrossel de fotos do sobre nos
 
