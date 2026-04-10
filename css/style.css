@@ -13,10 +13,12 @@ html, body {
 }
 
 :root {
-    --cor-primaria: #B95E82; 
-    --cor-secundaria: #FFECC0;
-    --cor-terceira: #F39F9F;
-    --cor-quarta: #FFC29B;
+    --cor-1: #E7DAC1; 
+    --cor-2: #D0B08C;
+    --cor-3: #A87A50;
+    --cor-4: #61402A;
+    --cor-5: #F6E0A6;
+    --cor-6: #3D2A20;
 }
 
 #home{
@@ -40,11 +42,10 @@ html, body {
     gap: 40px;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-6);
     list-style: none;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 15px var(--cor-4);
     padding: 15px;
-    
 }
 
 .pequeno-logo {
@@ -62,7 +63,7 @@ html, body {
     text-decoration: none;
     font-size: 1.5rem;
     font-family: "Dosis", sans-serif;
-    color: var(--cor-secundaria);
+    color: var(--cor-1);
     transition: ease-in 0.2s;
     
 }
@@ -75,7 +76,7 @@ html, body {
 .menu-opcao:hover {
     transform: scale(1.1);
     text-decoration: underline;
-    color: var(--cor-secundaria);
+    color: var(--cor-2);
 }
 
 
@@ -101,7 +102,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-6);
 }
 
 
@@ -126,7 +127,7 @@ html, body {
 
 
 #capa h1 {
-    color: var(--cor-primaria);
+    color: var(--cor-4);
     font-size: 5em;
     font-family: 'Dosis';
     
@@ -139,7 +140,7 @@ html, body {
     align-items: center;
     justify-content: space-around;
     
-    background-color: var(--cor-terceira);
+    background-color: var(--cor-2);
     height: 100vh;
 }
 
@@ -153,7 +154,7 @@ h1 {
 }
 
 .spam {
-    color: #FFC29B;
+    color: var(--cor-1);
 }
 
 .card-produto {
@@ -166,11 +167,11 @@ h1 {
 
 .card {
     border-radius: 20px;
-    border: 2px solid var(--cor-primaria);
-    filter: drop-shadow(0 0 5px #ff00fb51);
+    border: 2px solid var(--cor-1);
+    filter: drop-shadow(0 0 5px var(--cor-1));
     width: 300px;
     height: 300px;
-    background-color: var(--cor-quarta);
+    background-color: var(--cor-3);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -181,7 +182,7 @@ h1 {
 .card:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.09s;
-    filter: drop-shadow(0, 0, 20px #ff00fb8f);
+    filter: drop-shadow(0 0 20px var(--cor-1));
 }
 
 .card span {
@@ -192,7 +193,8 @@ h1 {
 .card p {
     margin-top: -5px;
     font-weight: 600;
-    color: #240f08;
+    color: var(--cor-1);
+    filter: drop-shadow(0 4px 0px var(--cor-4));
     font-size: 2.5em;
 }
 
@@ -206,7 +208,7 @@ h1 {
 
 .cookie1, .cookie2, .cookie3 {
     
-    filter: drop-shadow(0px -5px 20px rgba(255, 177, 69, 0.766));
+    filter: drop-shadow(0px -5px 50px var(--cor-5));
 }
 
 .cookie1 {
@@ -227,6 +229,7 @@ h1 {
     font-family: "Teko", sans-serif;
     font-weight: 500;
     text-align: center;
+    
 }
 
 #sobre-nos {
@@ -234,7 +237,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-3);
     padding: 20px;
     flex-direction: column;
     gap: 20px;
@@ -252,7 +255,7 @@ h1 {
     border-radius: 20px;
     overflow: hidden;
     margin: auto;
-    background-color: red;
+    
 }
 
 .img-slides {
@@ -271,8 +274,9 @@ h1 {
 .container-infos {
     width: 90%;
     height: 80%;
-    background-color: rgba(255, 92, 190, 0.5);
+    background-color: var(--cor-2);
     display: flex;
+    border-radius: 20px;
     justify-content: space-between;
 }
 
@@ -297,7 +301,7 @@ h1 {
     justify-content: flex-start;
     gap:60px;
     align-items: center;
-    background-color: var(--cor-terceira);
+    background-color: var(--cor-4);
     padding: 50px;
     flex-direction: column;
 }
@@ -316,9 +320,9 @@ h1 {
     padding: 10px;
     height: 300px;
     border-radius: 20px;
-    border: 4px solid var(--cor-secundaria);
-    background-color: var(--cor-primaria);
-   filter: drop-shadow(0px 0px 10px rgba(229, 0, 133, 0.5));
+    border: 4px solid var(--cor-1);
+    background-color: var(--cor-3);
+   filter: drop-shadow(0px 10px 10px var(--cor-6));
 }
 
 .contatos {
@@ -344,17 +348,12 @@ h1 {
     
 }
 
-.spam {
-    color: #FFECC0;
-}
-
 @media screen and (max-width: 768px) {
     
     .cookie-capa {
         background-color: var(--cor-quarta);
         background: linear-gradient(#FFC29B,#c47c50);
-        
-        
+    
     }
 
     .menu{
