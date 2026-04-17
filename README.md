@@ -9,9 +9,9 @@ Criei o projeto para um TCC do curso de Administração da ETEC Lauro Gomes. A l
 - Contato <br/>
 
 Por enquanto o projeto não está concluido, falta:
-- [ ] Decidir as cores oficiais do site
-- [ ] Mudar a imagem de fundo da página Home
-- [ ] Colocar o conteúdo da página Sobre nós
+- [X] Decidir as cores oficiais do site
+- [X] Mudar a imagem de fundo da página Home
+- [X] Colocar o conteúdo da página Sobre nós
 - [ ] Adicionar uma tela de descrição dos produtos
 - [ ] Criar botão que mandar uma mensagem para o whatsapp da loja
 
